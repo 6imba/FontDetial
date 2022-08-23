@@ -1,0 +1,23 @@
+# setup backend environment:
+    > py -m venv virenv
+    > Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process | Set-ExecutionPolicy unrestricted 
+    > .\virenv\Scripts\activate
+    > pip install flask
+
+# setup backend api:
+    > setup flask app in server.py file.
+
+# flask minimal app:
+    > from flask import Flask
+      app = Flask(__name__)
+      @app.route("/")
+      def hello_world():
+        return "<p>Hello, World!</p>"
+
+# url -> endpoints -> controller
+
+
+# Test:
+    > https://fast.fonts.net/FontsCom/Live/static/2.15.911.0/font/ss-pika.woff
+    > https://www.swinton.co.uk/ResourcePackages/Swinton/assets/fonts/4cadb55f-822a-4a35-8918-becfc5a866a3.woff2
+    > https://static-webfonts.myfonts.com/kit/RooneySans_normal_normal/font.woff2
